@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Главная'
+  })
+  <body class="signUp">
+    <div class="wrapper">
+      <div class="container">
+          @@include('html/header.html')
+    </div>
+        <main class="page">
+            <section class="signUp__block">
+                <div class="signUp__left">
+                    <img class="signUp-desktop" src="./images/signUpImg.png" alt="">
+                    <img class="signUp-mobile" src="./images/photoMobileSignUp.png" alt="">
+                </div>
+                <div class="signUp__right">
+                    <h1 class="signUp__title">Create Account</h1>
+                    <p class="signUp__subtitle">Welcome! Enter Your Details And Start Creating, Collecting And Selling NFTs.</p>
+                    @@include('html/signUpInput.html',{
+                        'imagePath':'../images/userSignUp.png',
+                        'inputText':'Username'
+                    })
+                    @@include('html/signUpInput.html',{
+                        'imagePath':'../images/emailSignUp.png',
+                        'inputText':'Email'
+                    })
+                    @@include('html/signUpInput.html',{
+                        'imagePath':'../images/passwordSignUp.png',
+                        'inputText':'Password'
+                    })
+                    @@include('html/signUpInput.html',{
+                        'imagePath':'../images/passwordSignUp.png',
+                        'inputText':'Confirm Password'
+                    })
+                    <button class="signUp__btn">Create account</button>
+                </div>
+            </section>
+      </main>
+     
+    
+   
+        @@include('html/footer.html')
+    
+     
+   
+  </body>
+</html>

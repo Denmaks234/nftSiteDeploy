@@ -6,6 +6,7 @@ const server = (instance) => {
       baseDir: filePaths.buildFolder,
     },
     logLevel: 'info',
+    tunnel:true,
     cors: true,
     notify: true,
     open: false,

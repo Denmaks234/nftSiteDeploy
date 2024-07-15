@@ -1,0 +1,23 @@
+<section class="howWorks">
+    @@include('headerTitleSubtitle.html',{
+        title:'How It Works',
+        subtitle:'Find Out How To Get Started'
+    })
+    <div class="howWorks__items">
+        @@include('howWorkItem.html',{
+            imgPath:'../images/howWork-item-1.png',
+            title:'Setup Your Wallet',
+            subtitle:'Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.'
+        })
+        @@include('howWorkItem.html',{
+            imgPath:'../images/howWork-item-2.png',
+            title:'Create Collection',
+            subtitle:'Upload your work and setup your collection. Add a description, social links and floor price.'
+        })
+        @@include('howWorkItem.html',{
+            imgPath:'../images/howWork-item-3.png',
+            title:'Start Earning',
+            subtitle:'Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.'
+        })
+    </div>
+</section>

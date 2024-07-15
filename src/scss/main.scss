@@ -1,52 +1,44 @@
-@use "sass:math";
-
-/**
-* Подключение шрифтов локально из папки "./src/fonts"
-*/
-@import "config/fonts";
-
-/** Подключение переменных */
-@import "config/root";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "config/vars";
-
-/**
-* Подключение sass function и mixins и extends стилей
-*/
-@import "config/functions";
 @import "config/mixins";
-@import "config/placeholders";
+
 
 /** Обнуление */
 @import "config/reset";
-
-/**
-* Библиотеки
-* раскомментировать для использования
-*/
-// @import 'libs/aos';
-// @import 'libs/swiper';
-
-/**
-* Подключение custom scrollbar для всего сайта
-*/
-@import "config/scrollbar";
-
-/**
-* Общие параметры, шаблоны(заготовки) и вспомогательные классы
-*/
 @import "config/base";
 
-/**
-* БЕМ блоки используемые во всё проекте
-*/
-@import "config/common";
 
-/**
-* Подключение стилей отдельных блоков и секций
-*/
 @import "components/header";
-@import "components/popup";
-@import "components/checkbox";
-@import "components/tabs";
-@import "components/accordion";
 @import "components/footer";
+@import "components/menu";
+@import "components/discover";
+@import "components/trending";
+@import "components/creators";
+@import "components/headerTitle";
+@import "components/trendingItem";
+@import "components/headerTitleWithBtn";
+@import "components/creatorsItem";
+@import "components/categories";
+@import "components/categoriesItem";
+@import "components/nfts";
+@import "components/nftItem";
+@import "components/mushroom";
+@import "components/howWorks";
+@import "components/howWorkItem";
+@import "components/joinUs";
+@import "signUp";
+@import "artist";
+@import "nftPage";
+@import "components/nftinfo";
+@import "components/tabs";
+@import "components/similarNfts";
+@import "components/nftPageInfoBlock";
+@import "components/nftThisArtist";
+@import "marketPlace";
+@import "components/searchBlock";
+@import "components/marketPlaceNfts";
+@import "topCreators";
+@import "components/descrCreator";
+@import "components/topCreatorsItem";
+@import "wallet";

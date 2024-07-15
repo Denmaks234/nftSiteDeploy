@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Главная'
+  })
+  <body class="nftPage">
+    <div class="wrapper">
+      <div class="container">
+          @@include('html/header.html')
+    </div>
+        <main class="page">
+            <img src="./images/nftImgBig.png" class="imageNft" alt="">   
+            <img src="./images/nftPageMobile.png" class="imageNftMobile" alt="">   
+            @@include('html/nftPageInfoBlock.html')
+            <div class="main__container">
+                 @@include('html/headerTitleWithBtn.html',{
+                'title':'More From This Artist',
+                subtitle:'',
+                img:'./images/arrowRight.png',
+                btn:'Go To Artist Page'
+            })
+            @@include('html/nftThisArtist.html')
+            <a href="#" class="headerTitleBtn headerTitleBtn-mobile"> <img src="./images/arrowRight.png" alt=""> <h5>Go To Artist Page</h5></a>
+            </div>
+           
+        </main>
+     
+    
+   
+        @@include('html/footer.html')
+    
+     
+   
+  </body>
+</html>

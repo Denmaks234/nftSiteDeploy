@@ -1,0 +1,41 @@
+<section class="nfts__block">
+    <div class="haedertitle">
+       @@include('headerTitleWithBtn.html',{
+        'title':'Discover More NFTs',
+        'subtitle':'Explore New Trending NFTs',
+        'img':'../images/eye.png',
+        'btn':'See All'
+    }) 
+    </div>
+    <div class="title-mobile">
+        @@include('headerTitleWithBtn.html',{
+            'title':'Discover More NFTs',
+            'subtitle':'Explore new trending NFTs',
+            'img':'../images/eye.png',
+            'btn':'See All'
+        }) 
+    </div>
+    <div class="nfts__items">
+        @@include('nftItem.html',{
+            'imgNft':'../images/nft1.png',
+            'nameNft':'Distant Galaxy',
+            'imageAuthor':'../images/author-1-nft.png',
+            'nameAuthor':'MoonDancer'
+        })
+        @@include('nftItem.html',{
+            'imgNft':'../images/nft2.png',
+            'nameNft':'Life On Edena',
+            'imageAuthor':'../images/author-2-nft.png',
+            'nameAuthor':'NebulaKid'
+        })
+        @@include('nftItem.html',{
+            'imgNft':'../images/nft3.png',
+            'nameNft':'AstroFiction',
+            'imageAuthor':'../images/author-3-nft.png',
+            'nameAuthor':'Spaceone'
+        })
+    </div>
+    <div class="btn-mobile">
+        <a href="#" class="headerTitleBtn headerTitleBtn-mobile"> <img src="../images/eye.png" alt=""> <h5>See All</h5></a>
+    </div>
+</section>

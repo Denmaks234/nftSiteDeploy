@@ -1,68 +1,103 @@
-@import "functions";
+
 @import "mixins";
 
-/** Базовые анимации: */
-@import "keyframes";
 
-/** Стили для полноэкранного блока: */
-// @import "fullscreen";
-
-/*
-* (i) Стили будут применяться ко
-* всем классам содержащим *__container
-* Например header__container, main__container и т.д.
-*/
-[class*="__container"] {
-	margin-inline: auto;
-	max-inline-size: rem($max-width-container);
-	padding-inline: rem($main-offset);
+body{
+	background: #2B2B2B;
+}
+.container{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+.main__container{
+	max-width: 1050px;
+	margin: 0 auto;
 }
 
-// Стили отзывчивых картинок (IBG) ============================================
-.ibg {
-	position: relative;
-
-	img {
-		position: absolute;
-		inset-block-start: 0;
-		inset-inline-start: 0;
-		object-fit: cover;
-		block-size: 100%;
-		inline-size: 100%;
+@media screen and (max-width:1220px) {
+	.container{
+		max-width: 1050px;
 	}
-
-	&_contain {
-		img {
-			object-fit: contain;
-		}
+	.main__container{
+		max-width: 920px;
+		margin: 0 auto;
 	}
 }
-
-// Оболочка ===================================================================
-.wrapper {
-	display: flex;
-	min-block-size: 100%;
-
-	/** Поменять на clip - если используется в проекте position: sticky */
-	overflow: hidden;
-	flex-direction: column;
-}
-
-.page {
-	position: relative;
-	flex: 1 1 auto;
-
-	[data-observ] {
-		pointer-events: none;
-		position: absolute;
-		inset-block-start: 0;
-		inset-inline-start: 0;
-		block-size: rem(2);
-		inline-size: 100%;
-		background: transparent;
+@media screen and (max-width:1080px) {
+	.container{
+		max-width: 910px;
 	}
-
-	&_start {
-		padding-block-start: rem($header-height);
+	.main__container{
+		max-width: 820px;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width:930px) {
+	.container{
+		max-width: 734px;
+	}
+	.main__container{
+		max-width: 690px;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width:755px) {
+	
+	.container{
+		max-width: 630px;
+	}
+	.main__container{
+		max-width: 570px;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width:650px) {
+	
+	.container{
+		max-width: 530px;
+	}
+	.main__container{
+		max-width: 530px;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width:560px) {
+	
+	.container{
+		max-width: 440px;
+	}
+	.main__container{
+		max-width: 440px;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width:460px) {
+	
+	.container{
+		max-width: 370px;
+	}
+	.main__container{
+		max-width: 370px;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width:390px) {
+	
+	.container{
+		max-width: 315px;
+	}
+	.main__container{
+		max-width: 315px;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width:330px) {
+	
+	.container{
+		max-width: 300px;
+	}
+	.main__container{
+		max-width: 300px;
+		margin: 0 auto;
 	}
 }

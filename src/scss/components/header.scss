@@ -1,82 +1,104 @@
-@import "../config/functions";
+
 @import "../config/mixins";
-
-.header {
-	z-index: 50;
-	inline-size: 100%;
-	transition: background-color var(--bs-transition);
-
-	.header-is-sticky & {
-		// ..стили для липкого хедера
-		position: fixed;
-		background-color: #007aff;
-	}
-
-	// .header__container
-	&__container {
-		display: flex;
-		block-size: rem($header-height);
-		align-items: center;
-
-		.header-is-sticky & {
-			block-size: rem($header-height - 50);
-		}
-	}
-}
-
-// Burger
-
-/*
-.icon-menu {
+.burger__menu{
   display: none;
-
-  @include media-mx(768) {
-    display: block;
+}
+.header {
+  &__container{
+    padding-top: 21px;
+    padding-bottom: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  &__btn{
+    color: white;
     position: relative;
-    width: rem(30);
-    height: rem(18);
-    cursor: pointer;
-    z-index: 5;
-
-    span,
-    &::before,
-    &::after {
-      content: "";
-      transition: all 300ms ease 0ms;
-      right: 0;
-      position: absolute;
-      width: 100%;
-      height: rem(2);
-      background-color: #000;
-    }
-
-    &::before {
-      top: 0;
-    }
-
-    &::after {
-      bottom: 0;
-    }
-
-    span {
-      top: calc(50% - rem(1));
-    }
-
-    .menu-open & {
-      span {
-        width: 0;
-      }
-
-      &::before {
-        top: calc(50% - rem(1));
-        transform: rotate(-45deg);
-      }
-
-      &::after {
-        bottom: calc(50% - rem(1));
-        transform: rotate(45deg);
-      }
+    padding: 19px 32px 19px 62px;
+    background: #A259FF;
+    font-size: 16px;
+    font-family: 'Work Sans';
+    font-weight: 600;
+    border-radius: 20px;
+    margin-right: -2px;
+  }
+  &__right{
+    display: flex;
+    align-items: center;
+    &-container{
+      display: flex;
+      align-items: center;
     }
   }
 }
-*/
+
+.header__btn::before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  background: url(../../images//user.png);
+  left: 30px;
+  background-size: contain;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width:1080px) {
+  .logo{
+    img{
+      width: 200px;
+    }
+  }
+  .header__btn{
+    font-size: 14px;
+    padding: 17px 32px 17px 52px;
+    margin-left: 20px;
+  }
+  .header__btn::before{
+   width: 15px;
+   height: 15px;
+   top: 18px;
+  }
+  
+}
+.overlap{
+  display: none;
+}
+@media screen and (max-width:930px) {
+    .logo{
+      img{
+          width: 182.56px;
+      }
+    }
+  .burger__menu{
+    display: block;
+  }
+  .header__right-container{
+    flex-direction: column;
+    position: absolute;
+    top: -700px;
+    padding-top: 45px;
+    height: 50vh;
+    right: 0px;
+    width: 100%;
+    background: #2B2B2B;
+    z-index: 100;
+    transition: all ease 1s;
+  }
+  .overlap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .header__container{
+    padding-top: 15px;
+  }
+}

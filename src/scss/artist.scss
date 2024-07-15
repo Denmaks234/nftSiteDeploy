@@ -1,0 +1,122 @@
+.artist{
+    .header__container{
+        padding-bottom: 22px;
+    }
+    .footer{
+        margin-top: 0;
+        padding-top: 89px;
+    }
+    .artistBg{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:840px) {
+    .artist .header__container {
+        padding-bottom: 14px;
+    }
+    .artistBg{
+        height: 281px;
+    }
+    .artist{
+        .tabs{
+            margin-top: 29px;
+        }
+        .tab{
+            justify-content: start;
+            padding-left: 58px;
+        }
+        .tab:nth-child(2){
+            padding-left: 61px;
+        }
+        .tab:nth-child(3){
+            padding-left: 46px;
+        }
+        .tab__title{
+            font-size: 16px;
+            margin-right: 16px;
+        }
+        .tab__count{
+            font-size: 12px;
+        }
+        .tabs__items{
+            padding-top: 26px;
+        }
+        .footer{
+            padding-top: 91px;
+        }
+        .copyright__wrapper{
+            margin-top: 50px;
+        }
+    }
+}
+@media screen and (max-width:760px) {
+    .artist{
+        .tab{
+            padding-left: 30px;
+        }
+        .tab:nth-child(2){
+            padding-left: 30px;
+        }
+        .tab:nth-child(3){
+            padding-left: 30px;
+        }
+    }
+}
+@media screen and (max-width:560px) {
+    .artist {
+        .tab__count{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width:425px) {
+    .artistBg {
+        height: 251px;
+    }
+    .artist .tab {
+        padding-left: 18px;
+    }
+    .artist .tab:nth-child(2) {
+        padding-left: 18px;
+    }
+    .artist .tab:nth-child(3) {
+        padding-left: 18px;
+    }
+    .artist{
+        .tabs__items {
+            padding-top: 30px;
+        }
+        .tab {
+            padding-left: 22px;
+            padding-bottom: 20.5px;
+        }
+        .tab:nth-child(2) {
+            padding-left: 30px;
+        }
+        .tab:nth-child(3) {
+            padding-left: 22px;
+        }
+        .footer {
+            padding-top: 89px;
+        }
+        .copyright__wrapper {
+            margin-top: 42px;
+        }
+    }
+}
+
+@media screen and (max-width:340px) {
+    .artist {
+      .tab {
+        padding-left: 17px;
+        padding-bottom: 14.5px;
+        }  
+        .tab:nth-child(2) {
+            padding-left: 24px;
+        }
+        .tab:nth-child(3) {
+            padding-left: 22px;
+        }
+    }
+}

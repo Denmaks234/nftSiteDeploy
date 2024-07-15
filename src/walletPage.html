@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Главная'
+  })
+  <body class="walletPage">
+    <div class="wrapper">
+      <div class="container">
+          @@include('html/header.html')
+    </div>
+        <main class="page">
+            <div class="wallet___left">
+                <img src="./images/walletImg.png" alt="">
+            </div>
+            <div class="wallet__right">
+                <h1 class="wallet__right-title">Connect Wallet</h1>
+                <p class="wallet__right-subtitle">Choose a wallet you want to connect. There are several wallet providers.</p>
+                <div class="wallet__items">
+                     @@include('html/walletType.html',{
+                    imagePath:'./images/metamask.png',
+                    title:'Metamask'
+                })
+                @@include('html/walletType.html',{
+                    imagePath:'./images/walletConnect.png',
+                    title:'Wallet Connect'
+                })
+                @@include('html/walletType.html',{
+                    imagePath:'./images/coinbase.png',
+                    title:'Coinbase'
+                })
+                </div>
+               
+            </div>
+        </main>
+     
+    
+   
+        @@include('html/footer.html')
+    
+     
+   
+  </body>
+</html>

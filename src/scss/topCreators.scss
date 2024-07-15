@@ -1,0 +1,109 @@
+.topCreators{
+    .headerTitle{
+        margin-top: 66px;
+        margin-left: 0px;
+        h1{
+            font-size: 51px;
+        }
+        p{
+            margin-top: 20px;
+        }
+    }
+    .tabs{
+        border: none;
+        margin-top: 16px;
+    }
+    .tab{
+        .tab__title{
+            margin-right: 0;
+        }
+    }
+    &__items{
+        margin-top: 19px;
+    }
+    .footer{
+        padding-top: 38px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:840px) {
+    .topCreators{
+        .headerTitle{
+            margin-top: 22px;
+            h1{
+                font-size: 38px;
+            }
+            
+        }
+        .tabs__items{
+            padding-top: 2px;
+        }
+        .tab{
+            margin-left: 6px;
+            padding-bottom: 20.5px;
+            width: 170px;
+           .tab__title{
+            font-size: 16px;
+        } 
+       
+        }
+         .tab:nth-child(2){
+            margin-left: 0px;
+        }
+        .tab:nth-child(3){
+            margin-left: 0px;
+        }
+        .tab:nth-child(4){
+            margin-left: 0px;
+        }
+    }
+}
+@media screen and (max-width:560px) {
+    .topCreators{
+        .tab{
+            padding-bottom: 10.5px;
+        }
+        .number{
+            font-size: 12px;
+        }
+        img{
+            margin-left: 8px;
+        }
+    }
+}
+@media screen and (max-width:460px) {
+    .topCreators{
+        .headerTitle{
+            margin-top: 13px;
+            h1{
+                font-size: 28px;
+            }
+            p{
+                margin-top: 13px;
+                padding-bottom: 34px;
+            }
+        }
+        .tabs__items{
+            padding-top: 2px;
+        }
+        .tab{
+            margin-left: 0px;
+            padding-bottom: 20.5px;
+            width: 170px;
+           .tab__title{
+            font-size: 16px;
+        } 
+       
+        }
+         .tab:nth-child(2){
+            margin-left: 0px;
+        }
+        .tab:nth-child(3){
+            margin-left: 0px;
+        }
+        .tab:nth-child(4){
+            margin-left: 0px;
+        }
+    }
+}

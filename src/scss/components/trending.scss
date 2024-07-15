@@ -1,0 +1,40 @@
+.trending{
+    margin-top: 167px;
+    &__items{
+        display: flex;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width:1220px) {
+    .trending{
+        &__items{
+            justify-content: center;
+        }
+    }
+}
+@media screen and (max-width:930px) {
+    .trending{
+        
+        margin-top: 124px;
+        &__items{
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media screen and (max-width:560px) {
+    .trending{
+        &__items{
+            justify-content: center;
+        }
+        
+    }
+}
+@media screen and (max-width:390px) {
+    .trending{
+        margin-top: 85px;
+        
+    }
+}

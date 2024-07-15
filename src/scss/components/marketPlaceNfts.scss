@@ -1,0 +1,211 @@
+.marketPlaceNfts {
+    padding-top: 60px;
+    background: #3B3B3B;
+
+    &__items {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .nft__item {
+        margin-bottom: 30px;
+        background: #2B2B2B;
+    }
+
+    .nft__item:nth-child(3) {
+        margin-right: 0;
+    }
+
+    .nft__item:nth-child(6) {
+        margin-right: 0;
+    }
+
+    .nft__item:nth-child(9) {
+        margin-right: 0;
+    }
+
+    .nft__item:nth-child(12) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:1240px) {
+    .marketPlaceNfts {
+        .nft__item {
+            width: 350px;
+            height: 480px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .nft__item-info {
+            img {
+                width: 20px;
+            }
+        }
+
+        &__items {
+            justify-content: center;
+        }
+
+        .nft__item:nth-child(3) {
+            margin-right: 30px;
+        }
+
+        .nft__item:nth-child(4) {
+            margin-right: 0px;
+        }
+
+        .nft__item:nth-child(8) {
+            margin-right: 0;
+        }
+
+        .nft__item:nth-child(9) {
+            display: none;
+        }
+
+        .nft__item:nth-child(10) {
+            display: none;
+        }
+
+        .nft__item:nth-child(11) {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:930px) {
+    .marketPlaceNfts {
+        .nft__item {
+            width: 310px;
+            height: 450px;
+            img {
+                width: 100%;
+            }
+        }
+        .nft__item-info {
+            padding: 21px 24px;
+            img {
+                width: 20px;
+            }
+        }
+        &__items {
+            justify-content: center;
+        }
+        .nft__item:nth-child(3) {
+            display: block;
+            margin-right: 30px;
+        }
+    }
+}
+@media screen and (max-width:840px) {
+    .marketPlaceNfts{
+        .nft__item{
+            width: 325px;
+            margin-bottom: 29px;
+            height: 470px;
+            img{
+                height: 297px;
+            }
+
+        }
+        .nft__item-info {
+            padding: 21px 30px;
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+@media screen and (max-width:755px) {
+    .marketPlaceNfts{
+        .nft__item{
+            width: 270px;
+            margin-bottom: 29px;
+            height: 430px;
+            margin-right: 20px;
+            img{
+                height: 260px;
+            }
+
+        }
+        .nft__item:nth-child(2n){
+            margin-right: 0;
+        }
+        .nft__item-info {
+            padding: 21px 15px;
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        .nft__item-name {
+            font-size: 20px;
+        }
+    }
+}
+@media screen and (max-width:650px) {
+    .marketPlaceNfts{
+        .nft__item{
+            width: 325px;
+            margin-bottom: 29px;
+            height: 470px;
+            margin-right: 0px;
+            img{
+                height: 295px;
+            }
+
+        }
+        .nft__item:nth-child(2n){
+            margin-right: 0;
+        }
+        .nft__item-info {
+            padding: 21px 30px;
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        .nft__item-name {
+            font-size: 20px;
+        }
+        .nft__item:nth-child(3) {
+            margin-right: 0;
+        }
+        .nft__item:nth-child(6) {
+            display: none;
+        }
+        .nft__item:nth-child(7) {
+            display: none;
+        }
+        .nft__item:nth-child(8) {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width:390px) {
+    .marketPlaceNfts{
+        padding-top: 40px;
+        .nft__item{
+            height: 404px;
+            margin-bottom: 28px;
+            img{
+                height: 238px;
+            }
+        }
+        .nft__item-info {
+            padding: 22px 21px;
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        .nft__item-name {
+            font-size: 22px;
+        }
+    }
+}

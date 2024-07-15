@@ -1,0 +1,18 @@
+<div class="timer__block">
+    <div class="timer__title">Auction ends in:</div>
+    <div class="timer__items">
+        @@include('timerItem.html',{
+            count:'59',
+            type:'Hours',
+        })
+        @@include('timerItem.html',{
+            count:'59',
+            type:'Minutes',
+        })
+        @@include('timerItem.html',{
+            count:'59',
+            type:'Seconds',
+        })
+    </div>
+    <button class="timer__block-btn">Place Bid</button>
+</div>

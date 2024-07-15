@@ -1,0 +1,66 @@
+.marketPlace{
+    
+    .tabs{
+        margin-top: 90px;
+    }
+    .tab__items{
+
+    }
+    .tab{
+        width: 525px;
+        padding-bottom: 12.5px;
+    }
+    .footer{
+        margin-top: 0px;
+        padding-top: 89px;
+    }
+}
+@media screen and (max-width:840px) {
+    .marketPlace{
+        .tab__title{
+            font-size: 16px;
+        }
+        .tab{
+            padding-left: 4px;
+        }
+        .tab:nth-child(2){
+            padding-right: 4px;
+        }
+        .tabs{
+            margin-top: 61px;
+        }
+        .copyright__wrapper{
+            margin-top: 51px;
+        }
+    }
+}
+@media screen and (max-width:460px) {
+    .marketPlace{
+        .tab__count{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width:390px) {
+    .marketPlace{
+        
+       .tabs {
+        margin-top: 40px;
+        } 
+        .tabs__items{
+            padding-top: 31px;
+        }
+        .tab{
+            padding-left: 17px;
+            padding-bottom: 19.5px;
+        }
+        .tab:nth-child(2){
+            padding-left: 21px;
+            
+        }
+        .footer{
+                margin-top: 0px;
+                padding-top: 49px;
+        }
+    }
+}

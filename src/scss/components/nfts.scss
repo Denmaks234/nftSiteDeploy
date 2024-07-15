@@ -1,0 +1,68 @@
+.nfts__block{
+    margin-top: 132px;
+    .title-mobile{
+        display: none;
+    }
+    .headerTitleBtn-mobile{
+        display: none;
+    }
+}
+.nfts__items{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:1080px) {
+    .nfts__items{
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+}
+@media screen and (max-width:930px) {
+    .nfts__block{
+       margin-top: 51px; 
+       .headerTitleBtn{
+        margin-top: 5px;
+       }
+        .title-mobile{
+       display: block;
+        }
+        .haedertitle{
+            display: none;
+        }
+}
+}
+@media screen and (max-width:755px) {
+    .nfts__block{
+       .headerTitleBtn{
+        margin-top: 20px;
+       }
+}
+}
+@media screen  and (max-width:460px) {
+    .nfts__block .headerTitleBtn{
+        display: none;
+    }
+    .nfts__block .headerTitleBtn-mobile{
+        display: flex;
+        width: 330px;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen  and (max-width:390px) {
+    .nfts__block {
+        margin-top: 63px;
+        .headerTitleWithBtn{
+            p{
+                margin-top: 12px;
+            }
+        }
+    }
+   
+}

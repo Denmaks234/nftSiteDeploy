@@ -1,0 +1,121 @@
+.nftPage{
+    .imageNft{
+        width: 100%;
+    }
+    .header__container{
+        padding-bottom: 21px;
+    }
+    .headerTitleWithBtn{
+        margin-top: 122px;
+        margin-bottom: 60px;
+        .headerTitleBtn{
+            margin-bottom: 0;
+        }
+    }
+    .footer{
+        margin-top: 19px;
+    }
+    .imageNftMobile{
+        display: none;
+    }
+    .headerTitleBtn-mobile{
+        display: none;
+     }
+}
+@media screen  and (max-width:840px) {
+    .nftPage .header__container {
+        padding-bottom: 16px;
+    }
+    .imageNft{
+        object-fit: contain;
+        height: 421px;
+    }
+    .nftPage .headerTitleWithBtn {
+        margin-top: 46px;
+        margin-bottom: 60px;
+    }
+    .nftPage .headerTitleBtn{
+        margin-top: 16px;
+    }
+    .nftPage .footer {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:760px) {
+   .imageNft{
+        height: 350px;
+    }
+}
+@media screen and (max-width:660px) {
+    .imageNft{
+         height: 290px;
+     }
+ }
+ @media screen and (max-width:600px) {
+    .imageNft{
+         height: 260px;
+     }
+ }
+ @media screen and (max-width:530px) {
+    .imageNft{
+         height: 230px;
+     }
+ }
+ @media screen and (max-width:500px) {
+    .imageNft{
+         height: 200px;
+     }
+ }
+ @media screen and (max-width:425px) {
+    .imageNft{
+         display: none;
+     }
+     .nftPage .imageNftMobile{
+        width: 100%;
+        display: block;
+     }
+     .nftPage .headerTitleWithBtn{
+        margin-top: 64px;
+        margin-bottom: 21px;
+     }
+     .nftPage .headerTitleBtn{
+        display: none;
+     }.nftPage .headerTitleBtn-mobile{
+        display: flex;
+     }
+     .nftPage .nft__item{
+        height: 469px;
+        &-name{
+            text-transform: capitalize;
+        }
+         img{
+        height: 295px;
+     }
+     .nftItemCount .count {
+        font-size: 16px;
+        margin-top: 5px;
+        text-align: end;
+    }
+     }
+     .nftPage .nft__item-info{
+        padding: 22px 30px;
+        img{
+            width: 24px;
+            height: 24px;
+        }
+     }
+     .nftPage .headerTitleBtn {
+        margin-top: -2px;
+        padding: 19px 72px;
+    }
+    .nftPage .footer {
+        margin-top: 43px;
+    }
+ }
+ @media screen and (max-width:340px) {
+    .nftPage{
+        .headerTitleBtn{
+            padding: 19px 60px;
+        }
+    }
+ }

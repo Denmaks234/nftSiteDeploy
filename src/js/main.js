@@ -1,66 +1,29 @@
-/**
- * !(i)
- * Код попадает в итоговый файл, только когда вызвана функция, например FLSFunctions.spollers();
- * Или когда импортирован весь файл, например import "files/script.js";
- * Неиспользуемый код в итоговый файл не попадает.
+const closeBtn = document.querySelector('.close')
+const menu = document.querySelector('.header__right-container')
+const overlap = document.querySelector('.overlap')
+const body = document.querySelector('body')
+const burger = document.querySelector('.burger__menu')
+const tabToday = document.querySelector('.tab__title-today')
+const tabWeek = document.querySelector('.tab__title-week')
+const tabMonth = document.querySelector('.tab__title-month')
 
- * Если мы хотим добавить модуль следует его раскомментировать
- */
-// import { MousePRLX } from './libs/parallaxMouse'
-// import AOS from 'aos'
-// import Swiper, { Navigation, Pagination } from 'swiper';
+burger.addEventListener('click',()=>{
+	closeBtn.style.display='block';
+	menu.style.top='0px';
+	overlap.style.display='block'
+	body.style.height='100vh'
+	body.style.overflow='hidden'
+})
+closeBtn.addEventListener('click',()=>{
+	closeBtn.style.display='none';
+	menu.style.top='-700px';
+	overlap.style.display='none'
+	body.style.height='100%'
+	body.style.overflow='auto'
+})
 
-import { BaseHelpers } from './helpers/base-helpers';
-import { PopupManager } from './modules/popup-manager';
-import { BurgerMenu } from './modules/burger-menu';
-import { Tabs } from './modules/tabs';
-import { Accordion } from './modules/accordion';
-
-BaseHelpers.checkWebpSupport();
-
-BaseHelpers.calcScrollbarWidth();
-
-BaseHelpers.addTouchClass();
-
-BaseHelpers.addLoadedClass();
-
-BaseHelpers.headerFixed();
-
-/**
- * Открытие/закрытие модальных окон
- * Чтобы модальное окно открывалось и закрывалось
- * На окно повешай атрибут data-popup="<название окна>"
- * На кнопку, которая вызывает окно повешай атрибут data-type="<название окна>"
-
- * На обертку(.popup) окна добавь атрибут '[data-close-overlay]'
- * На кнопку для закрытия окна добавь класс '.button-close'
- * */
-new PopupManager();
-
-/**
- *  Модуль для работы с меню (Бургер)
- * */
-new BurgerMenu().init();
-
-/**
- *  Библиотека для анимаций
- *  документация: https://michalsnik.github.io/aos
- * */
-// AOS.init();
-
-/**
- * Параллакс мышей
- * */
-// new MousePRLX();
-
-new Tabs('tabs-example', {
-	onChange: (data) => {
-		console.log(data);
-	},
-});
-
-new Accordion('.accordion', {
-	shouldOpenAll: false, // true
-	defaultOpen: [], // [0,1]
-	collapsedClass: 'open',
-});
+if(window.innerWidth<561){
+	tabToday.textContent='1d'
+	tabWeek.textContent='7d'
+	tabMonth.textContent='30d'
+}

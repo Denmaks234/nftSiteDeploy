@@ -1,0 +1,93 @@
+.descrCreator{
+    display: flex;
+    align-items: center;
+    border:1px solid #858584;
+    padding: 12px 20px 12px 28px;
+    border-radius: 20px;
+    margin-top: 40px;
+    &__number{
+        font-family: 'Space Mono';
+        font-size: 16px;
+        font-weight: 400;
+        color: #858584;
+        width: 30px;
+        margin-right: 10px;
+    }
+    &__title{
+        font-family: 'Space Mono';
+        font-size: 16px;
+        font-weight: 400;
+        color: #858584;
+        width: 380px;
+        margin-right: 60px;
+    }
+    &__change{
+        font-family: 'Space Mono';
+        font-size: 16px;
+        font-weight: 400;
+        color: #858584;
+        width: 160px;
+        margin-right: 20px;
+    }
+    &__price{
+        font-family: 'Space Mono';
+        font-size: 16px;
+        font-weight: 400;
+        color: #858584;
+        width: 160px;
+        margin-right: 20px;
+    }
+    &__volume{
+        font-family: 'Space Mono';
+        font-size: 16px;
+        font-weight: 400;
+        color: #858584;
+        width: 160px;
+         
+    }
+}
+@media screen and (max-width:840px) {
+    .descrCreator{
+        padding: 11px 20px 12px 29px;
+        &__number{
+            margin-right: 22px;
+        }
+        &__title{
+            margin-right: 144px;
+        }
+    }
+}
+@media screen and (max-width:560px) {
+    .descrCreator{
+        &__change{
+            display: none;
+        }
+        &__title{
+            margin-right: 67px;
+        }
+    }
+    
+}
+@media screen and (max-width: 460px) {
+    .descrCreator {
+        padding: 11px 20px 10px 16px;
+        &__title{
+            font-size: 12px;
+            margin-right: 15px;
+        }
+        &__number{
+            margin-right: 14px;
+        }
+        &__volume{
+            font-size: 12px;
+        }
+    }
+}
+@media screen and (max-width:340px) {
+    .descrCreator{
+        &__title {
+        font-size: 12px;
+        margin-right: 50px;
+    }
+}
+}

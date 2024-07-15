@@ -1,0 +1,219 @@
+.topCreatorsItem{
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    width: 100%;
+    background: #3B3B3B;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    .number{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #2B2B2B;
+        color: #858584;
+        font-family: 'Space Mono';
+        font-size: 16px;
+        font-weight: 400;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+    }
+    img{
+        margin-left: 20px;
+    }
+    .name{
+        width: 300px;
+        font-family: 'Work Sans';
+        font-size: 22px;
+        font-weight: 600;
+        color: white;
+        margin-left: 20px;
+        margin-right: 60px;
+    }
+    .proccent{
+        font-family: 'Space Mono';
+        font-size: 16px;
+        font-weight: 400;
+        width: 160px;
+        color: #00AC4F;
+        margin-right: 20px;
+    }
+    .sold{
+        font-family: 'Space Mono';
+        font-size: 16px;
+        font-weight: 400;
+        width: 160px;
+        color: #ffffff;
+        margin-right: 20px;
+    }
+    .eth{
+        font-family: 'Space Mono';
+        font-size: 16px;
+        font-weight: 400;
+        width: 160px;
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width:1170px) {
+    .topCreatorsItem{
+        .number{
+            font-size: 15px;
+            width: 33px;
+        }
+        img{
+            width: 50px;
+        }
+    }
+}
+@media screen and (max-width:1070px) {
+    .topCreatorsItem{
+        .number{
+            font-size: 15px;
+            width: 42px;
+        }
+        img{
+            width: 50px;
+        }
+    }
+}
+@media screen and (max-width:930px) {
+    .topCreatorsItem{
+        .number{
+            font-size: 15px;
+            width: 42px;
+            background: none;
+        }
+        img{
+            width: 30px;
+            margin-left: 5px;
+        }
+        .name{
+            font-size: 19px;
+        }
+        .eth{
+            text-align: center;
+        }
+        .sold{
+            display: none;
+            margin-right: 40px;
+        }
+        
+    }
+    .descrCreator{
+        &__price{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width:840px) {
+    .topCreatorsItem{
+        padding-top: 3px;
+        padding-bottom: 7px;
+        height: 60px;
+        padding-left: 18px;
+        img{
+            margin-left: 19px;
+            width: 24px;
+            margin-top: 3px;
+        }
+        .name{
+            margin-left: 12px;
+            width: 467px;
+        }
+        .eth{
+            margin-right: 10px;
+        }
+        .proccent{
+            margin-right: 10px;
+        }
+    }
+}
+@media screen and (max-width:755px) {
+    .topCreatorsItem{
+        padding-top: 3px;
+        padding-bottom: 7px;
+        height: 60px;
+        padding-left: 18px;
+        img{
+            margin-left: 19px;
+            width: 24px;
+            margin-top: 3px;
+        }
+        .name{
+            font-size: 17px;
+        }
+        .eth{
+            font-size: 14px;
+        }
+        .proccent{
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width:560px) {
+    
+    .topCreatorsItem{
+        .proccent{
+            display: none;
+        }
+        .name{
+            margin-right: 30px;
+            width: 360px;
+        }
+        img{
+        margin-left: 8px;
+
+        }
+        .number{
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width:460px) {
+    
+    .topCreatorsItem{
+        height: 51px;
+        padding-top: 6px;
+        margin-bottom: 19px;
+        padding-bottom: 7px;
+        padding-left: 14px;
+        .proccent{
+            display: none;
+        }
+        .name{
+            margin-right: 5px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        img{
+        margin-left: 16px;
+            margin-top: 0;
+        }
+        .number{
+            font-size: 14px;
+        }
+        .eth{
+            margin-right: 11px;
+            font-size: 12px;
+        }
+    }
+}
+@media screen and (max-width:340px) {
+    .topCreatorsItem{
+        .name{
+            font-size: 14px;
+        }
+        .eth{
+            margin-right: 0px;
+            font-size: 10px;
+        }
+        .number{
+            font-size: 12px;
+        }
+        img{
+            margin-left: 8px;
+        }
+    }
+}

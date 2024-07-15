@@ -1,0 +1,35 @@
+.howWorks{
+    margin-top: 80px;
+    .headerTitle{
+        margin-left: 0;
+    }
+    &__items{
+        margin-top: -10px;
+        display: flex;
+        align-items: center;
+    }
+}
+@media screen and (max-width:930px) {
+    .howWorks {
+        margin-top: 42px;
+        &__items{
+            margin-top: 0;
+        }
+    }
+}
+@media screen and (max-width:930px) {
+    .howWorks {
+        margin-top: 42px;
+        &__items{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+@media screen and (max-width:390px) {
+    .howWorks{
+        .headerTitle p{
+            line-height: 129%;
+        }
+    }
+}

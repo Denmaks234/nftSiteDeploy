@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Главная'
+  })
+  <body class="marketPlace">
+    <div class="wrapper">
+      <div class="container">
+          @@include('html/header.html')
+    </div>
+        <main class="page">
+            <div class="main__container">
+                @@include('html/searchBlock.html')
+            </div>
+                <section class="tabs">
+                    <div class="main__container">
+                        <div class="tabs__items">
+                
+                        
+                        <div class="tab tab__marketPlace active">
+                            <div class="tab__title">NFTs</div>
+                            <div class="tab__count">302</div>
+                        </div>
+                        <div class="tab tab__marketPlace">
+                            <div class="tab__title">Collections</div>
+                            <div class="tab__count">67</div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                @@include('html/marketPlaceNfts.html')
+        </main>
+     
+    
+   
+        @@include('html/footer.html')
+    
+     
+   
+  </body>
+</html>

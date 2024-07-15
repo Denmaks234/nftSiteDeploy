@@ -1,0 +1,35 @@
+.categories__title{
+    font-size: 38px;
+    font-weight: 600;
+    font-family: 'Work Sans';
+    color: white;
+}
+.categories{
+    margin-top: 131px;
+    &__items{
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:930px) {
+    .categories__title{
+        font-size: 28px;
+    }
+    .categories{
+        margin-top: 52px;
+        &__items{
+            margin-top: 43px;
+            justify-content: center;
+        }
+    }
+}
+@media screen and (max-width:390px) {
+   .categories{
+    margin-top: 89px;
+    &__items{
+        margin-top: 50px;
+    }
+   }
+}

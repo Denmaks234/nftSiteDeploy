@@ -1,0 +1,22 @@
+<div class="nft__item">
+    <a href="../nftPage.html">
+    <img src="@@imgNft" alt="">
+    <div class="nft__item-info">
+    <h4 class="nft__item-name">@@nameNft</h4>
+    <div class="nft__item-author">
+        <img src="@@imageAuthor" alt="">
+        <h6 class="author__name">@@nameAuthor</h6>
+    </div>
+    <div class="nft__item-counts">
+        @@include('nftItemCount.html',{
+            title:'Price',
+            count:'1.63 ETH'
+        })
+        @@include('nftItemCount.html',{
+            title:'Highest Bid',
+            count:'0.33 wETH'
+        })
+    </div>
+</div>
+</a>
+</div>

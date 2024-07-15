@@ -1,0 +1,47 @@
+.headerTitle{
+    margin-left: 3px;
+    h1{
+        font-size: 38px;
+        font-weight: 600;
+        color: white;
+        font-family: 'Work Sans';
+        line-height: 120%;
+      
+    }
+    p{
+        font-size: 22px;
+        font-weight: 400;
+        color: white;
+        font-family: 'Work Sans';
+        margin-top: 14px;
+        padding-bottom: 64px;
+        
+    }
+}
+@media screen and (max-width:930px) {
+    .headerTitle{
+        margin-left: 0;
+        h1{
+            font-size: 28px;
+            font-weight: 600;
+            font-family: 'Work Sans';
+        }
+        p{
+            font-size: 16px;
+            text-transform: lowercase;
+            padding-bottom: 42px;
+        }
+        
+    }
+    .headerTitle p::first-letter{
+        text-transform: uppercase;
+    }
+}
+@media screen and (max-width:930px) {
+    .headerTitle{
+        p{
+            line-height: 131%;
+        }
+        
+    }
+}

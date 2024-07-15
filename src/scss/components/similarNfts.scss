@@ -1,0 +1,120 @@
+.similarNfts{
+    padding-top: 80px;
+    background: #3B3B3B;
+    &__items{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .nft__item{
+        background: #2B2B2B;
+        margin-bottom: 30px;
+    }
+    .nft__item:nth-child(6){
+        margin-right: 0;
+    }
+    .nft__item:nth-child(9){
+        margin-right: 0;
+    }
+    
+}
+@media screen and (max-width:1220px) {
+    .similarNfts__items{
+        justify-content: center;
+        .nft__item:nth-child(8){
+        margin-right: 0;
+    }
+        .nft__item:nth-child(9){
+        display: none;
+    }
+    .nft__item-name {
+        font-size: 19px;
+    }
+    .nft__item:nth-child(3){
+        display: block;
+        margin-right: 30px;
+    }
+  
+    .nft__item:nth-child(6){
+        margin-right: 30px;
+    }
+    .nft__item:nth-child(7){
+        margin-right: 30px;
+    }
+    .nft__item:nth-child(8){
+        margin-right: 30px;
+    }
+    .nft__item:nth-child(2n){
+        margin-right: 0;
+    }
+    }
+    
+}
+@media screen and (max-width: 840px) {
+    .similarNfts__items{
+        .nft__item-name {
+        font-size: 22px;
+    }
+    .nft__item-info {
+        padding: 23px 30px;
+    }
+    .nft__item:nth-child(3) {
+        
+        display: block;
+    }
+    .nft__item:nth-child(4) {
+        display: block;
+        margin-right: 0;
+    }
+    .nft__item:nth-child(5) {
+        display: block;
+        margin-right: 30px;
+    }
+    .nft__item:nth-child(6) {
+        display: block;
+        margin-right: 0;
+    }
+    .nft__item:nth-child(7) {
+        
+        display: none;
+    }
+    .nft__item:nth-child(8) {
+        display: none;
+    }
+    } 
+   
+}
+@media screen and (max-width: 760px) {
+    .similarNfts__items{
+        .nft__item-name {
+        font-size: 22px;
+    }
+    .nft__item-info {
+        padding: 23px 30px;
+    }
+    .nft__item:nth-child(3) {
+        margin-right: 0;
+        display: block;
+    }
+    .nft__item:nth-child(4) {
+        display: block;
+        margin-right: 0;
+    }
+    .nft__item:nth-child(5) {
+        display: none;
+        margin-right: 30px;
+    }
+    .nft__item:nth-child(6) {
+        display: none;
+        margin-right: 0;
+    }
+    .nft__item:nth-child(7) {
+        
+        display: none;
+    }
+    .nft__item:nth-child(8) {
+        display: none;
+    }
+    } 
+   
+}

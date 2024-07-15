@@ -1,11 +1,16 @@
-<header class="header" data-lp>
+<header class="header" >
 	<div class="header__container">
-		<a href="#" class="header__logo logo"></a>
-		<nav class="header__menu menu">
-			<ul class="menu__list">
-				<li class="menu__item"><a href="#" class="menu__link">Link</a></li>
-			</ul>
-		</nav>
-		<!-- @@include('./icon-menu.html', {}) -->
+		<div class="header__left">
+			<a href="../index.html"><div class="logo"><img src="../images/logo.png" alt=""> </div></a>
+		</div>
+		<div class="header__right">
+			<div class="header__right-container">
+				@@include('menu.html')
+				<a class="header__btn" href="../signUp.html">Sign Up</a>
+			</div>
+			
+			<img class="burger__menu" src="../images/nav menu.png" alt="" >
+		</div>
 	</div>
+	<div class="overlap"></div>
 </header>
