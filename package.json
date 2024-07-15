@@ -6,15 +6,15 @@
 	"type": "module",
 	"scripts": {
 		"dev": "gulp",
-		"build": "gulp build --build",
+		
 		"preview": "npm run build && npx serve ./dist",
 		"lint:scss": "stylelint src/scss/**/*.scss --fix",
 		"zip": "gulp deployZIP --build",
 		"deployFTP": "gulp deployFTP --build",
 		"sprite": "gulp createSvgSprite",
 		"deploy": "gh-pages -d dist",
-		"prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,html,css,md,yaml,yml}\"",
-		"predeploy": "npm run build"
+		"prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,html,css,md,yaml,yml}\""
+		
 	},
 	"repository": {
 		"type": "git",
